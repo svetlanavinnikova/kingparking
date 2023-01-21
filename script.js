@@ -27,3 +27,12 @@ $(".owners__icon").click(function() {
     }
 
 });
+
+$(".free-spots").click(function() {
+    if ($(event.target).is(".parking-spot"))  {
+        if (!($(event.target).is(".is-taken")))  {
+            $(".parking-spot").removeClass("chosen");
+            $(event.target).addClass("chosen");
+        }
+    }
+})
