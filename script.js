@@ -33,6 +33,7 @@ $(".free-spots").click(function() {
         if (!($(event.target).is(".is-taken")))  {
             $(".parking-spot").removeClass("chosen");
             $(event.target).addClass("chosen");
+            $(".book").removeClass("is-hidden");
         }
     }
 })
